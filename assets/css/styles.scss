@@ -1,0 +1,12 @@
+---
+---
+@use 'main';
+@use 'header';
+@use 'footer';
+
+:root {
+  --primary-text-color: #333;
+  --secondary-text-color: #fff;
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #333;
+}

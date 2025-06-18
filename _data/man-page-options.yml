@@ -1,0 +1,55 @@
+- section:
+  name: General
+  options:
+    - param: -c, --config=FILE
+      descr: file path to read configuration from
+    - param: -h, --help
+      descr: Print program usage and quit.
+    - param: -v, --verbose
+      descr: The verbose mode displays the path to the default configuration file, along with the final, merged configuration. This includes values from the optional default config file, an optional config file specified via command-line argument, and any additional command-line arguments. It might also print some debug output (like parsing errors).
+    - param: -V, --version
+      descr: Print version number and quit.
+
+- section:
+  name: Positioning
+  options:
+    - param: -e PIXEL
+      descr: Adds spacing (in pixels) to the screen edge. The affected edge depends on the selected orientation and has no effect when the orientation is set to <code>CENTER</code>. Can be a negative value and defaults to <code>0</code>.
+    - param: -l PIXEL
+      descr: Adds spacing (in pixels) between each text line. Must be a non-negative value and defaults to <code>0</code>.
+    - param: -m INDEX
+      descr: Specifies the monitor to use. Must be a non-negative value and defaults to <code>0</code>.
+    - param: -o ORIENTATION
+      descr: Positions the overlay along the screen edge specified by the orientation. Text lines are aligned accordingly; defaults to <code>NW</code> possible values are <code>N</code>, <code>NE</code>, <code>E</code>, <code>SE</code>, <code>S</code>, <code>SW</code>, <code>W</code>, <code>NW</code> and <code>CENTER</code>.
+
+- section:
+  name: Font
+  options:
+    - param: -f, --font-name=FONT,..
+      descr: font name; defaults to <code>NotoSansMono</code>
+    - param: -s, --font-size=SIZE,..
+      descr: font size; defaults to <code>12</code>
+
+- section:
+  name: Colors
+  options:
+    - param: -p, --profile=PROFILE
+      descr: profile for ansi colors; values are VGA or XP
+    - param: --fg-color=COLOR
+      descr: foreground color; defaults to <sgr>97</sgr> (equals <sgr>38;2;255;255;255</sgr>)
+    - param: --fg-alpha=ALPHA
+      descr: foreground alpha; defaults to <code>200</code>
+    - param: --bg-color=COLOR
+      descr: background color; defaults to <sgr>40</sgr> (equals <sgr>48;2;0;0;0</sgr>)
+    - param: --bg-alpha=ALPHA
+      descr: background alpha; defaults to <code>100</code>
+
+- section:
+  name: Behavior
+  options:
+    - param: -d, --dim=PERCENT
+      descr: dim the text on mouse over; defaults to <code>75</code>%
+    - param: -D PERCENT
+      descr: dim the text in general; defaults to <code>0</code>%
+    - param: -t PIXEL
+      descr: pixel tolerance for mouse over dimming; defaults to <code>0</code>

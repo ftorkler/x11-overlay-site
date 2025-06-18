@@ -1,0 +1,18 @@
+<div class="man-page">
+    <h1>Name</h1>
+    <p>x11-overlay! - display text file as a desktop overlay</p>
+
+    <h1>Synopsis</h1>
+    <p><span class="option-param">x11-overlay [<i>OPTION...</i>] FILE</i></span></p>
+
+    <h1>Description</h1>
+    <p><b>x11-overlay</b> is a tiny program to display the content of text files as an overlay on your desktop.
+    Its goal is simplicity, a non-distracting visualization and especially it should not interfere with user interactions targeting the underlying content.<br>
+    <br>
+    It is designed as a front-end tool to show alarms or the health status of any system. To do so, just write your custom script that generates and updates a text file with the information you want to be displayed. Use this file as input for x11-overlay and that's it. But of course, it's absolutely not limited to alarming dashboards. Be creative!</p>
+
+    {% for section in site.data.man-page-options %}
+        <h1>{{ section.name }}</h1>
+        <ul>{% for option in section.options %}{% include fragments/man-page-option.html %}{% endfor %}</ul>
+    {% endfor %}
+</div>

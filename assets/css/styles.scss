@@ -3,10 +3,12 @@
 @use 'main';
 @use 'header';
 @use 'footer';
+@use 'man-page';
 
 :root {
   --primary-text-color: #333;
+  --primary-bg-color: #f2f2f2;
+  --primary-header-bg-color: #e2e2e2;
   --secondary-text-color: #fff;
-  --primary-bg-color: #fff;
   --secondary-bg-color: #333;
 }

@@ -1,0 +1,51 @@
+.man-page {
+    ul {
+        list-style-type: none;
+        padding-left: 5px;
+    }
+
+    h1 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .option-param {
+        font-size: 0.8rem;
+        font-family: monospace;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        background-color: white;
+    }
+    .option-descr {
+        margin-top: 5px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+
+        code {
+            background-color: unset;
+            font-family: monospace;
+            font-size: 0.9rem;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .sgr {
+        font-family: monospace;
+        font-size: 0.9rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        padding: 0.1rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    .sgr::before {
+        color: gray;
+        font-size: 0.7rem;
+        content: "ESC";
+    }
+    .sgr::after {
+        /* color: gray; */
+        content: "m";
+    }
+}

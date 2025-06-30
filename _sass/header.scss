@@ -4,6 +4,10 @@
     position: relative;
     background-color: var(--primary-header-bg-color);
 
+    img {
+        box-shadow:unset;
+    }
+
     @media screen and (max-width: 600px) {
         padding-bottom: 15px;
         border-bottom: 1px solid #e8e8e8;

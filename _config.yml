@@ -44,7 +44,9 @@ github_username: jekyll
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - README.md
+  - dev-resources/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
